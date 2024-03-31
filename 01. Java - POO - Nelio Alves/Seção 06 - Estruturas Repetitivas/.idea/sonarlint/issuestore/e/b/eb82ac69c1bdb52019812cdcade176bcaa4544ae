@@ -1,0 +1,8 @@
+
+V
+java:S1220""Move this file to a named package.J$5501884a-da6b-49aa-98c7-20f83cc8d14f
+f	java:S106"+Replace this use of System.out by a logger.(ÉØJ$56230999-e13e-439c-a826-f0eb7b381572
+’
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(Î¯«´ÿÿÿÿÿJ$f41d0be2-0897-4f6d-85cb-607f3072f7fe
+k	java:S106"+Replace this use of System.out by a logger.(Î¯«´ÿÿÿÿÿJ$e3f42d67-ada9-434e-8312-b108b6ce7393
+f	java:S106"+Replace this use of System.out by a logger.(ºÔïÑJ$218ccbd6-8750-463f-b366-fdf7dfdf5f19

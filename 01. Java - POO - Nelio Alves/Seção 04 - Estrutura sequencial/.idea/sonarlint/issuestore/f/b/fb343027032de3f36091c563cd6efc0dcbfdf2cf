@@ -1,0 +1,11 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“½¦J$e7fbe32f-21eb-4ca4-9896-d65b2c817b67
+z
+java:S1854"9Remove this useless assignment to local variable "valor".(‘¯ù˜üÿÿÿÿJ$ece18aee-3902-4874-a64f-c88f95328201
+s
+java:S1854"8Remove this useless assignment to local variable "hora".(‚Ëï[J$70d8b438-c56b-4712-8d02-73f88acf9ec9
+f	java:S106"+Replace this use of System.out by a logger.(ÿËÀJ$e8c53dd4-f902-4c15-949e-ed6a29222fd1
+k	java:S106"+Replace this use of System.out by a logger.(–ìçŠüÿÿÿÿJ$7047bf0e-e416-4c26-ac2f-b70393fbc1f5
+e	java:S106"+Replace this use of System.out by a logger.(Ó›ZJ$0267e8dd-9cf2-40a0-a850-7c9eafbaf78f
+f	java:S106"+Replace this use of System.out by a logger.(Ş£šâJ$d4e2a6f9-6781-47ce-ad9c-ad0f5b5539e6
+f	java:S106"+Replace this use of System.out by a logger.(ª‡§ÂJ$fc554c29-8dfb-43ba-9ff8-8173150f4c12

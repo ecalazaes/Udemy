@@ -1,0 +1,12 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“½¦J$daf4e6b0-176c-4153-9ec5-5e151f62cde7
+s
+java:S1854"7Remove this useless assignment to local variable "cod".(ø£ö©J$76a68044-d966-4dbc-b56c-fe9fa12fa194
+\
+java:S1659"!Declare "qtd" on a separate line.(–æãhJ$bcc689e1-41cd-4719-81c1-b00a88f1424e
+c
+java:S1481"(Remove this unused "cod" local variable.(–æãhJ$e0ed7ebb-759b-435a-80f1-dfdfdfce33f7
+e	java:S106"+Replace this use of System.out by a logger.(Ã›‚-J$a06e536c-533a-4731-93e0-1aa778652b6b
+f	java:S106"+Replace this use of System.out by a logger.(ğÎòãJ$8dfead30-e927-4ade-847c-90f3748190d5
+k	java:S106"+Replace this use of System.out by a logger.(¢Ÿ¡ûÿÿÿÿJ$3e444c3e-d396-4b22-8622-1389c6663e33
+f	java:S106"+Replace this use of System.out by a logger.(çË¿ÛJ$6ac6c5e7-c6b5-4ff8-b66c-f3d61634482c

@@ -9,6 +9,7 @@ public class Exercicio02 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+
         double raio, area, pi = 3.14159;
 
         System.out.println("informe o raio do circulo: ");

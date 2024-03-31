@@ -1,0 +1,6 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“½¦J$d01a5093-d8c3-4baf-8735-f3c6e72964fe
+‚
+java:S1659"ADeclare "area" and all following declarations on a separate line.(¸íô³ùÿÿÿÿJ$f604afab-5141-40ae-8b2b-e078acfb378c
+f	java:S106"+Replace this use of System.out by a logger.(ÔĞ†àJ$072f03da-3886-49ef-b405-f78947a10cf3
+f	java:S106"+Replace this use of System.out by a logger.(òçûJ$2856cb60-de55-42d8-b555-f13a5098cb46
