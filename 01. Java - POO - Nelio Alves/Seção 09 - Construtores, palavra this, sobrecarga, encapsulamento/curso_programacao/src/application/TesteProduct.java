@@ -10,28 +10,26 @@ public class TesteProduct {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Product produto1 = new Product();
-
         System.out.println("Informe os dados do produto");
 
         System.out.print("Name: ");
-        produto1.nome = sc.nextLine();
+        String nome = sc.nextLine();
         System.out.print("Price: ");
-        produto1.price = sc.nextDouble();
-        System.out.print("Qtd: ");
-        produto1.qtd = sc.nextInt();
+        double price = sc.nextDouble();
 
-        System.out.println("\nInformações: " + produto1);
+        Product product = new Product(nome, price);
+
+        System.out.println("\nInformações: " + product);
 
         System.out.print("\ninforme o número que deseja adicionar em estoque: ");
-        int valorAdicionar = sc.nextInt();
-        produto1.adicionarProduto(valorAdicionar);
-        System.out.println("\nInformações: " + produto1);
+        int valor = sc.nextInt();
+        product.adicionarProduto(valor);
+        System.out.println("\nInformações: " + product);
 
         System.out.print("\ninforme o número que deseja remover em estoque: ");
-        int valorRemove = sc.nextInt();
-        produto1.removerProduto(valorRemove);
-        System.out.print("\nInformações: " + produto1);
+        valor = sc.nextInt();
+        product.removerProduto(valor);
+        System.out.print("\nInformações: " + product);
 
         sc.close();
     }
