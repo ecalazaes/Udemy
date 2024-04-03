@@ -1,6 +1,7 @@
 package application;
 
 import model.entities.Reservation;
+import model.exceptions.DomainException;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -12,16 +13,16 @@ public class TesteExcecoes {
         Scanner sc = new Scanner(System.in);
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-        System.out.print("Room number: ");
-        int number = sc.nextInt();
+        try {
+            System.out.print("Room number: ");
+            int number = sc.nextInt();
 
-        System.out.print("Check-in date (dd/MM/yyyyy): ");
-        LocalDate checkIn = LocalDate.parse(sc.next(), dtf);
+            System.out.print("Check-in date (dd/MM/yyyyy): ");
+            LocalDate checkIn = LocalDate.parse(sc.next(), dtf);
 
-        System.out.print("Check-out date (dd/MM/yyyyy): ");
-        LocalDate checkOut = LocalDate.parse(sc.next(), dtf);
+            System.out.print("Check-out date (dd/MM/yyyyy): ");
+            LocalDate checkOut = LocalDate.parse(sc.next(), dtf);
 
-        if (checkOut.isAfter(checkIn)){
             Reservation reservation = new Reservation(number, checkIn, checkOut);
             System.out.println(reservation);
 
@@ -32,16 +33,14 @@ public class TesteExcecoes {
             System.out.print("Check-out date (dd/MM/yyyyy): ");
             checkOut = LocalDate.parse(sc.next(), dtf);
 
-            String error = reservation.udapteDates(checkIn,checkOut);
-            if(error != null){
-                System.out.println("Error in reservation: " + error);
-            }
-            else {
-                System.out.println(reservation);
-            }
+            reservation.udapteDates(checkIn, checkOut);
+            System.out.println(reservation);
         }
-        else {
-            System.out.println("Error in reservation: Check-out date must be after check-in date");
+        catch ( DomainException e ){
+            System.out.println("Error in reservation" + e.getMessage());
+        }
+        catch (RuntimeException e ){
+            System.out.println("Erro inesperado");
         }
 
         sc.close();
