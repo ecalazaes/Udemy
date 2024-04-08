@@ -18,6 +18,5 @@ public class EqualsHashcode {
         System.out.println(c1 == c2);
         System.out.println(s1 == s2);
 
-
     }
 }
