@@ -22,10 +22,10 @@ public class TesteFunction {
 
         Function<Product, String> func = p -> p.getName().toUpperCase();
 
-        List<String> names = list.stream().map(new UpperCaseName()).collect(Collectors.toList());
-        List<String> names = list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
-        List<String> names = list.stream().map(Product::nonStaticUpperCaseName).collect(Collectors.toList());
-        List<String> names = list.stream().map(func).collect(Collectors.toList());
+//        List<String> names = list.stream().map(new UpperCaseName()).collect(Collectors.toList());
+//        List<String> names = list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
+//        List<String> names = list.stream().map(Product::nonStaticUpperCaseName).collect(Collectors.toList());
+//        List<String> names = list.stream().map(func).collect(Collectors.toList());
         List<String> names = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
 
         names.forEach(System.out::println);
