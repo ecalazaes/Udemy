@@ -1,6 +1,7 @@
 package com.ecalazaes.workshopmongo.controllers;
 
 import com.ecalazaes.workshopmongo.dto.UserDTO;
+import com.ecalazaes.workshopmongo.entities.Post;
 import com.ecalazaes.workshopmongo.entities.User;
 import com.ecalazaes.workshopmongo.services.UserService;
 import org.springframework.http.HttpStatus;
@@ -50,6 +51,12 @@ public class UserController {
     public ResponseEntity<User> updateUser(@RequestBody User user, @PathVariable String id){
         user = userService.updateUser(id, user);
         return ResponseEntity.ok(user);
+    }
+
+    @GetMapping( "/{id}/posts")
+    public ResponseEntity<List<Post>> findPosts(@PathVariable String id){
+        User user = userService.findById(id);
+        return ResponseEntity.ok(user.getPosts());
     }
 
 }
