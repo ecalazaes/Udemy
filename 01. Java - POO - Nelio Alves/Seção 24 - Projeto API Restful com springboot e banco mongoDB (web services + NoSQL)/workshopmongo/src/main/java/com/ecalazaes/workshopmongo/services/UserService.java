@@ -35,6 +35,16 @@ public class UserService {
         userRepository.deleteById(id);
     }
 
+    public User updateUser(String id, User user){
+        return userRepository.findById(id)
+                .map(userFound -> {
+                    userFound.setName(user.getName());
+                    userFound.setEmail(user.getEmail());
+                    return userRepository.save(userFound);
+                })
+                .orElseThrow(() -> new ObjectNotFoundException("Usuário não encontrado com o id: " + id));
+    }
+
     public User fromDTO(UserDTO userDTO) {
         return new User(userDTO.getId(), userDTO.getName(), userDTO.getEmail());
     }
