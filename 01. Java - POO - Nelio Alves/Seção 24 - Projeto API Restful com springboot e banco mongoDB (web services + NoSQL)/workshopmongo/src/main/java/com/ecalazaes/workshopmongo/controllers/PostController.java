@@ -1,5 +1,6 @@
 package com.ecalazaes.workshopmongo.controllers;
 
+import com.ecalazaes.workshopmongo.controllers.util.URL;
 import com.ecalazaes.workshopmongo.dto.UserDTO;
 import com.ecalazaes.workshopmongo.entities.Post;
 import com.ecalazaes.workshopmongo.entities.User;
@@ -27,4 +28,12 @@ public class PostController {
         Post post = postService.findById(id);
         return ResponseEntity.ok(post);
     }
+
+    @GetMapping( "/titlesearch")
+    public ResponseEntity<List<Post>> findByTitle(@RequestParam(value = "text", defaultValue = "") String text){
+        text = URL.decodeParam(text);
+        List<Post> list = postService.findByTitle(text);
+        return ResponseEntity.ok(list);
+    }
+
 }
